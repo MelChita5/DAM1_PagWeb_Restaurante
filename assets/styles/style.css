@@ -1,0 +1,741 @@
+/*  Bebidas
+    Packs y menus especiales
+    menus comunes
+    postres
+     */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: 100px 30px 1fr 40px;
+    grid-template-areas: 
+        "zh"
+        "zn"
+        "zs"
+        "zf"
+        
+        ;
+
+}
+
+header {
+    grid-area: zh;
+    background-color: #182e1f;
+  
+    /* border: 1px solid black; */
+}
+#contenedor_header {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo img {
+    height: 100px;
+    
+}
+#cuenta {
+    position: absolute;
+}
+#cuenta img {
+    height: 20px;
+}
+#carrito {
+    display: flex;
+    position: absolute;
+    right: 40px;
+    top: 25px;
+}
+#carrito img {
+    height: 50px;
+}
+#carrito_unidades {
+    position: absolute;
+    background-color: red;
+    height: 20px;
+    width: 20px;
+    border-radius: 20px;
+    right: 40px;
+    top: 20px;
+} 
+#carrito_unidades div {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+   
+}
+nav {
+    grid-area: zn;
+    background-color: #47855b;
+   
+    /* border: 1px solid rgb(0, 0, 0); */
+}
+#menu {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+#menu div {
+    width: 33.33333%;
+    border: 1px solid black;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+aside {
+    grid-area: za;
+    z-index: 0;
+}
+#fondo_img_aside > img {
+    width: 100%;
+    opacity: 0.2;
+    height: 1200px;
+    z-index: 0;
+}
+#fondo_img_aside {
+    z-index: 0;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    grid-area: zs;
+    /* border: 1px solid black; */
+    padding-top: 50px;
+    padding-bottom: 50px;
+    /* z-index: 2; */
+}
+
+.titulos {
+    background-color: rgba(0, 128, 0, 0.219);
+    font-size: 50px;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* html {
+    scroll-behavior: smooth;
+} */
+#contenedor1 {
+    /* background-color: rgb(99, 99, 99); */
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    /* padding-bottom: 50px; */
+    margin-bottom: 100px;
+    gap: 30px;  
+    padding-top: 50px;
+    padding-bottom: 10px;
+    position: relative;
+}
+.recuadros1 {
+    background-color: white;
+    width: 220px;
+    height: 340px;
+    box-shadow: 14px 14px 20px 20px rgba(20, 20, 20, 0.3);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.recuadros1:hover {
+    box-shadow: 14px 14px 20px 20px rgba(20, 20, 20, 0.3);
+    transform: translateY(-2%);
+}
+.oferta_novedades {
+    position: absolute;
+    background-color: rgb(111, 223, 0);
+    right: -20px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    top: -40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 14px 14px 20px 2px rgba(20, 20, 20, 0.3);
+}
+.nombre_novedad {
+    position: absolute;
+    top: 16px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.estrellas_amarillas {
+    position: absolute;
+    top: 40px;
+}
+.recuadros1 img {
+    
+    height: 200px;
+    border: 1px solid black;
+    box-shadow: 14px 14px 20px 0px rgba(20, 20, 20, 0.3);
+}
+.recuadros1 button {
+    position: absolute;
+    bottom: 16px;
+    width: 110px;
+    height: 40px;
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 50px;
+    
+}
+.recuadros1 button:hover {
+    transition: 300ms;
+    background-color: rgb(0, 0, 0);
+}
+.recuadros1 button a {
+    font-size: 15px;
+}
+.recuadros1 button a:hover {
+    color: white;
+}
+/* .recuadros_invisibles1 {
+    overflow: hidden;
+    width: 280px;
+    height: 400px;
+} */
+
+#contenedor2 {
+    /* background-color: rgb(99, 99, 99); */
+    width: 80%;
+    height: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    /* padding-bottom: 50px; */
+    margin-bottom: 100px;
+    gap: 30px;  
+    padding-top: 30px;
+    padding-bottom: 30px;
+    
+}
+.recuadros2 {
+    background-color: white;
+    width: 280px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    box-shadow: 14px 14px 20px 10px rgba(20, 20, 20, 0.3);
+}
+.recuadros2:hover {
+    box-shadow: 14px 14px 20px 10px rgba(5, 48, 4, 0.459);
+    transform: translateY(-2%);
+}
+.recuadros2 img {
+    height: 320px;
+    position: absolute;
+    top: 55px;
+    border-radius: 5px;
+    box-shadow: 14px 14px 20px 2px rgba(20, 20, 20, 0.3);
+}
+.recuadros2 button {
+    width: 200px;
+    height: 50px;
+    border: none;
+    background-color: white;
+}
+.recuadros_invisibles2 {
+    overflow: hidden;
+    width: 280px;
+    height: 400px;
+}
+a {
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+    color: black;
+    text-shadow: 2px 1px 5px rgba(102, 102, 102, 0.895)
+}
+
+footer {
+    grid-area: zf;
+    background-color: rgb(0, 44, 0);
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding-right: 20px;
+}
+
+
+/* HTML packs */
+
+#contenedor1_menus {
+    /* background-color: rgb(99, 99, 99); */
+    width: 80%;
+    height: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    /* padding-bottom: 50px; */
+    margin-bottom: 100px;
+    gap: 30px;  
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.oferta {
+    position: absolute;
+    background-color: rgb(111, 223, 0);
+    right: -20px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    top: -20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 14px 14px 20px 2px rgba(20, 20, 20, 0.3);
+}
+.datos_comida {
+    position: absolute;
+    top: 360px;
+    left: 1px;
+}
+.packs {
+    text-align: left;
+    /* padding-left: 25px;  */
+    color: gray;
+    position: absolute;
+    left: 18px;
+    bottom: 148px;
+}
+.nombres_comida {
+    position: absolute;
+    font-size: 20px;
+    text-align: left;
+    /* padding-left: 23px;  */
+    font-weight: bold;
+    left: 18px;
+    bottom: 100px;
+}
+.estrellas {
+    position: absolute;
+    left: 18px;
+    bottom: 77px;
+}
+.precios {
+    position: absolute;
+    left: 18px;
+    bottom: 53px;
+}
+.precio_tachado {
+    text-decoration-line: line-through;
+    color: red;
+}
+.imagen_comida {
+    height: 350px;
+    padding-top: 30px;
+}
+.imagen_comida img {
+    box-shadow: 2px 3px 5px 2px rgba(20, 20, 20, 0.3);
+}
+.recuadros3 {
+    background-color: white;
+    width: 300px;
+    height: 550px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    text-align: center;
+    justify-content: center;
+    box-shadow: 14px 14px 20px 2px rgba(20, 20, 20, 0.3);
+    border-radius: 10px;
+    position: relative;
+}
+.recuadros3:hover {
+    box-shadow: 14px 14px 20px 10px rgba(11, 58, 5, 0.548);
+    transform: translateY(-2%);
+}
+.añadir_carrito {
+    background-color: #528a47;
+    position: absolute;
+    width: 130px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    top: 485px;
+    left: 155px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: black;
+    font-size: 14px;
+    box-shadow: 10px 10px 10px 0px rgba(20, 20, 20, 0.3);
+    cursor: pointer;
+}
+.añadir_carrito:hover {
+    transition: 300ms;
+    background-color: black;
+    font-weight: bold;
+    color: white;
+}
+.agotado {
+    position: absolute;
+    background-color: rgba(195, 231, 179, 0.959);
+    height: 35px;
+    width: 300px;
+    top: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+
+/* HTML Leer */
+
+.contenedor_leermas {
+    display: flex;
+    background-color: rgba(0, 128, 0, 0.416);
+    width: 900px;
+    height: 500px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.contenedor_leermas div img {
+    height: 450px;
+    box-shadow: 10px 10px 10px 0px rgba(20, 20, 20, 0.3);
+    
+}
+.contenedor_leermas div img:hover {
+    height: 520px;
+    box-shadow: 10px 10px 10px 10px rgba(20, 20, 20, 0.3);
+    
+}
+.contenido_leermas {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background-color: rgb(255, 255, 255);
+    margin-left: 30px;
+    box-shadow: 10px 10px 10px 0px rgba(20, 20, 20, 0.3);
+}
+.contenido_leermas div {
+    position: absolute;
+    left: 20px;
+}
+.tipo_lm {
+    color: gray;
+    top: 25px;
+}
+.nombre_lm {
+   font-size: 25px;
+   font-weight: bold;
+
+    top: 50px;
+}
+.extrellas_lm {
+    top: 87px;
+}
+.precio_lm {
+    font-size: 20px;
+    top: 120px;
+    font-weight: bold;
+}
+.texto_lm {
+    right: 20px;
+    top: 160px;
+}
+.agotado_lm {
+    top: 260px;
+    color: red;
+    font-size: 30px;
+    border: 1px solid rgb(255, 0, 0);
+    height: 40px;
+    width: 135px;
+    padding-left: 15px;
+    box-shadow: 10px 10px 10px 0px rgba(20, 20, 20, 0.3);   
+}
+.añadir_carrito_lm {
+    background-color: #528a47;
+    position: absolute;
+    width: 130px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    top: 330px;
+    right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: black;
+    font-size: 14px;
+    box-shadow: 10px 10px 10px 0px rgba(20, 20, 20, 0.3);
+    cursor: pointer;
+}
+
+.añadir_carrito_lm:hover {
+    transition: 300ms;
+    background-color: black;
+    font-weight: bold;
+    color: white;
+}
+.añadir_carrito_falso {
+    background-color: #528a47;
+    position: absolute;
+    width: 130px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    top: 485px;
+    right: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: black;
+    font-size: 14px;
+    box-shadow: 10px 10px 10px 0px rgba(20, 20, 20, 0.3);
+    text-decoration-line: line-through;
+}
+
+/* HTML reserva */
+
+#section_reserva {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: zs;
+    position: relative;
+    
+    /* border: 1px solid black; */
+    ;
+}
+.titulo_res  {
+    position: absolute;
+    top: 0;
+    font-size: 40px;    
+    padding-top: 20px;
+}
+.contenedor_reserva {
+    position: relative;
+    background-color: rgba(167, 250, 167, 0.781);
+    width: 900px;
+    height: 600px;
+    z-index: 1;
+    
+    
+    /* position: relative;
+    width: 400px;
+    height: 400px;
+    background-color: rgb(126, 92, 92);
+    margin-left: 30px;
+    box-shadow: 10px 10px 10px 0px rgba(20, 20, 20, 0.3); */
+}
+
+#img1 {
+    position: absolute;
+    left: 20px;
+    z-index: 0;
+}
+#img2 {
+    position: absolute;
+    right: 20px;
+    z-index: 0;
+}
+.nombre_res {
+    position: absolute;
+    z-index: 2;
+    background-color: white;
+    width: 470px;
+    height: 100px;
+    top: 100px;
+    left: 200px;
+    box-shadow: 10px 10px 10px 0px rgba(20, 20, 20, 0.3);
+}
+.nombre_res div {
+    position: absolute;
+    left: 20px;
+    top: 40px;
+    font-size: 20px;
+}
+.nombre_res input {
+    position: absolute;
+    left: 130px;
+    top: 42px;
+    width: 300px;
+    height: 20px;
+}
+.gmail {
+    position: absolute;
+    z-index: 2;
+    background-color: white;
+    width: 500px;
+    height: 100px;
+    top: 220px;
+    left: 180px;
+    box-shadow: 10px 10px 10px 0px rgba(20, 20, 20, 0.3);
+}
+.gmail div {
+    position: absolute;
+    left: 30px;
+    top: 40px;
+    font-size: 20px;
+}
+.gmail input {
+    position: absolute;
+    left: 130px;
+    top: 42px;
+    width: 340px;
+    height: 20px;
+}
+.fecha {
+    position: absolute;
+    z-index: 2;
+    background-color: white;
+    width: 270px;
+    height: 100px;
+    top: 340px;
+    left: 300px;
+    box-shadow: 10px 10px 10px 0px rgba(20, 20, 20, 0.3);
+}
+.fecha div {
+    position: absolute;
+    left: 30px;
+    top: 40px;
+    font-size: 20px;
+}
+.fecha input {
+    position: absolute;
+    left: 130px;
+    top: 42px;
+    width: 100px;
+    height: 20px;
+}
+
+.contenedor_reserva button {
+    width: 130px;
+    height: 50px;
+    position: absolute;
+    top:500px;
+    left: 370px;
+    border: none;
+    font-size: 20px;
+    background-color: green;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px 0px rgba(20, 20, 20, 0.3);
+
+}
+.contenedor_reserva button:hover {
+    background-color: black;
+    cursor: pointer;
+    transition: 200ms;
+}
+
+/* HTML contacto */
+
+/* .contenedor_contacto {
+    
+}
+.contenedor_contacto img {
+   
+} */
+
+.section_contacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    grid-area: zs;
+    /* border: 1px solid black; */
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-image: url(../imagenes/fondo_vegetales1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    
+}
+.negro {
+    background-color: rgba(0, 0, 0, 0.637);   
+    width: 100%;
+    height: 100%; 
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.gmail_contact {
+    
+    width: 500px;
+    height: 200px;
+    background-color: white;
+    border-radius: 50px;
+    position: relative;
+    box-shadow: 10px 10px 10px 0px rgba(201, 200, 200, 0.3);
+}
+.gmail_contact img {
+    height: 100px;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+.gmail_contact div {
+    height: 100px;
+    position: absolute;
+    top: 85px;
+    left: 180px;
+    font-size: 20px;
+}
+.wats {
+    width: 500px;
+    height: 200px;
+    background-color: white;
+    border-radius: 50px;
+    position: relative;
+    box-shadow: 10px 10px 10px 0px rgba(201, 200, 200, 0.3);
+}
+.wats img {
+    height: 100px;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+.wats div {
+    height: 100px;
+    position: absolute;
+    top: 85px;
+    left: 220px;
+    font-size: 20px;
+}
